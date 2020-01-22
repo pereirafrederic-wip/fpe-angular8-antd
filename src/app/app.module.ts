@@ -3,9 +3,11 @@ import { NgModule } from "@angular/core";
 
 import { AppComponent } from "./app.component";
 
+import { NgZorroAntdModule } from "ng-zorro-antd";
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, HttpClientModule, NgZorroAntdModule],
   providers: [],
   bootstrap: [AppComponent]
 })
